@@ -1,0 +1,222 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* end of imports */
+
+/* General */
+html {
+    font-family: 'Montserrat', serif;
+!important;
+}
+.mainSection {
+    padding-top: 20px !important;
+}
+
+/* end of General*/
+
+ /* sections Background Colors*/
+
+#About{}
+#Technologies{}
+#Projects{}
+#Contact{}
+/* end of section background colors*/
+
+/* Helping classes */
+.vh-75 {
+
+    min-height: 75vh !important;
+}
+
+.vh-60 {
+
+    min-height: 60vh !important;
+}
+
+.vh-50 {
+
+    min-height: 50vh !important;
+}
+
+.vh-40 {
+
+    min-height: 50vh !important;
+}
+
+.vh-25 {
+
+    min-height: 25vh !important;
+}
+
+.vh-10 {
+
+    min-height: 10vh !important;
+}
+
+.spacer {
+
+    height: 20px !important;
+    display: block;
+    width: 100% !important;
+}
+
+/* end of helping classes*/
+
+/* header section */
+.bg-dark-nav {
+    background: rgba(52, 58, 64, 0.6) !important;
+}
+
+/* end of header */
+
+/* about  section */
+#aboutMeParagraph {
+
+
+}
+
+#aboutMeParagraph p {
+
+    font-size: 1.4rem !important;
+}
+
+#aboutMeParagraph b {
+
+    font-size: 1.7rem !important;
+}
+
+/* end of about  section */
+
+/* Technologies section */
+
+#Technologies .card{
+    background-color: transparent !important;
+}
+.technologyImg{
+
+    width: 150px !important;
+    height: 150px !important;
+}
+/* end of Technologies section */
+
+/*   projects section  */
+
+/* hover effect on img for projects*/
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.hovereffect img {
+    /*display: block;*/
+    /*position: relative;*/
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+/* end of hover effect classes*/
+
+.slideShow img {
+
+    max-height: 380px !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin: auto !important;
+}
+
+.projectImg {
+    max-height: 260px !important;
+
+}
+
+/* end of projects section */
+
+/* contact section */
+.contactLead {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.smallIcon {
+    max-width: 1vh;
+    margin-left: 0.3px !important;
+
+}
+
+
+/* end of contact section */
+
+
+/* footer section*/
+footer {
+    padding-top: 3px;
+}
+
+/* end of footer section*/
