@@ -16,10 +16,10 @@ html {
 
  /* sections Background Colors*/
 
-#About{}
-#Technologies{}
-#Projects{}
-#Contact{}
+#About{ background-color: #e1e1e1;}
+#Technologies{background-color: #e8e8e8;}
+#Projects{background-color: #f0f0f0;}
+#Contact{background-color: #f7f7f7;}
 /* end of section background colors*/
 
 /* Helping classes */
