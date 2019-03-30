@@ -591,16 +591,39 @@
             </div>
             <div class="spacer"></div>
             <div class="row justify-content-center">
-                <div class="col-lg-3 col-sm-12 projectBlock">
+                <div class="col-lg-3 col-sm-12 projectBlock" id="tahadeeImg" >
                     <div class="hovereffect">
-                        <img class="w-100  projectImg" src="imgs/projects/tahadee/Untitled-1.jpg" alt="">
+                        <img class="w-100  projectImg" src="imgs/projects/tahadee/mock-tahadee-1.jpg" alt="">
                         <div class="overlay">
                             <h2>Tahadee</h2>
                             <a class="info" data-toggle="modal" data-target="#tahadee">More...</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 projectBlock">
+                <div class="col-lg-3 col-sm-12 projectBlock" id="tahadeeFallback" hidden>
+
+
+                            <a class="info" data-toggle="modal" data-target="#tahadee">  <img class="w-100  projectImg" src="imgs/projects/tahadee/mock-tahadee-1.jpg" alt=""></a>
+
+
+                </div>
+                <div class="col-lg-3 col-sm-12 projectBlock" id="cloudFallback" hidden>
+
+
+                            <a class="info" data-toggle="modal" data-target="#cloudNotes"> <img class="w-100  projectImg" src="imgs/projects/cloudNotes/cloudNotes-mockup-2.png" alt="">
+                            </a>
+
+
+                </div>
+                <div class="col-lg-3 col-sm-12 projectBlock" id="cfcFallback" hidden>
+
+
+                            <a class="info" data-toggle="modal" data-target="#cfcBahrain">                          <img class="w-100  projectImg" src="imgs/projects/cfcBahrain/cfc-mockup-1.png" alt="">
+                            </a>
+
+
+                </div>
+                <div class="col-lg-3 col-sm-12 projectBlock" id="cloudImg">
                     <div class="hovereffect">
                         <img class="w-100  projectImg" src="imgs/projects/cloudNotes/cloudNotes-mockup-2.png" alt="">
                         <div class="overlay">
@@ -609,7 +632,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3  col-sm-12 projectBlock">
+                <div class="col-lg-3  col-sm-12 projectBlock" id="cfcImg">
                     <div class="hovereffect">
                         <img class="w-100  projectImg" src="imgs/projects/cfcBahrain/cfc-mockup-1.png" alt="">
                         <div class="overlay">
@@ -622,7 +645,17 @@
 
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-3  col-sm-12 projectBlock">
+                <div class="col-lg-3 col-sm-12 projectBlock" id="teamFallback" hidden>
+
+
+                    <a class="info" data-toggle="modal" data-target="#team">                         <img class="w-100  projectImg" src="imgs/projects/team/team-mockup-2.jpg" alt="">
+
+                    </a>
+
+
+                </div>
+
+                <div class="col-lg-3  col-sm-12 projectBlock" id="teamImg">
                     <div class="hovereffect">
                         <img class="w-100  projectImg" src="imgs/projects/team/team-mockup-2.jpg" alt="">
                         <div class="overlay">
@@ -740,7 +773,19 @@
 <script>
 
     document.getElementById("year").innerText = new Date().getFullYear();
+function TouchFallback() {
 
+    document.getElementById("tahadeeImg").hidden = true;
+    document.getElementById("teamImg").hidden = true;
+    document.getElementById("cfcImg").hidden = true;
+    document.getElementById("cloudImg").hidden = true;
+    document.getElementById("tahadeeFallback").hidden = false;
+    document.getElementById("teamFallback").hidden = false;
+    document.getElementById("cfcFallback").hidden = false;
+    document.getElementById("cloudFallback").hidden = false;
+    window.removeEventListener('touchstart', onFirstTouch, false);
+
+}
     function ControlNavBrand() {
         let divHeiht = document.getElementById("Landing").clientHeight / 2.3;
         let scroll = window.scrollY.valueOf();
@@ -756,6 +801,7 @@
     }
 
     window.addEventListener("scroll", ControlNavBrand);
+    window.addEventListener('touchstart',TouchFallback,false);
 </script>
 </body>
 </html>
