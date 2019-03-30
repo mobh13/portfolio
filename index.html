@@ -468,7 +468,7 @@
     <!-- About me section-->
     <section class="row vh-40 mainSection justify-content-center align-content-center text-center align-middle"
              id="About">
-        <div class="col-7 align-self-center" id="aboutMeParagraph">
+        <div class="col-lg-7  col-md-7 col-sm-12 align-self-center" id="aboutMeParagraph">
             <p class="text-justify">
                 <b class="">Hi!</b>, I am Mohamed Madan, an ICT undergraduate student at Bahrain Polytechnic and a web
                 developer
@@ -591,7 +591,7 @@
             </div>
             <div class="spacer"></div>
             <div class="row justify-content-center">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-12 projectBlock">
                     <div class="hovereffect">
                         <img class="w-100  projectImg" src="imgs/projects/tahadee/Untitled-1.jpg" alt="">
                         <div class="overlay">
@@ -600,7 +600,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-12 projectBlock">
                     <div class="hovereffect">
                         <img class="w-100  projectImg" src="imgs/projects/cloudNotes/cloudNotes-mockup-2.png" alt="">
                         <div class="overlay">
@@ -609,7 +609,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3  col-sm-12 projectBlock">
                     <div class="hovereffect">
                         <img class="w-100  projectImg" src="imgs/projects/cfcBahrain/cfc-mockup-1.png" alt="">
                         <div class="overlay">
@@ -621,9 +621,8 @@
 
 
             </div>
-            <div class="spacer"></div>
             <div class="row justify-content-center">
-                <div class="col-lg-3">
+                <div class="col-lg-3  col-sm-12 projectBlock">
                     <div class="hovereffect">
                         <img class="w-100  projectImg" src="imgs/projects/team/team-mockup-2.jpg" alt="">
                         <div class="overlay">
@@ -648,7 +647,7 @@
             </div>
             <div class="spacer"></div>
             <div class="row align-content-center">
-                <div class="col-lg-6 text-justify" id="contactParagraph">
+                <div class="col-lg-6 col-sm-12 text-justify" id="contactParagraph">
                     <p class="contactLead ">Get in touch to start a conversation about your project. <br> You can expect
                         a
                         same-day response in business hours.</p>
@@ -665,7 +664,7 @@
 
                     </p>
                 </div>
-                <div class="col-lg-6  ">
+                <div class="col-lg-6 col-sm-12 ">
 
                     <form class="form" target="_blank" method="post"
                           action="https://formspree.io/madannmohamed@gmail.com">
@@ -675,7 +674,7 @@
                                 <div class="form-group">
                                     <label for="name">Name</label>
                                     <input type="text" class="form-control" name="name" placeholder="Name" value=""
-                                           id="name" data-validation="length" data-validation-length="min5">
+                                           id="name" data-validation="length" data-validation-length="min5" required>
                                 </div>
                             </div>
 
@@ -684,8 +683,8 @@
                             <div class="col-md-10 ">
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="text" class="form-control" name="email" placeholder="Email" value=""
-                                           id="email" data-validation="length" data-validation-length="min5">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" value=""
+                                           id="email" data-validation="length" data-validation-length="min5" required>
                                 </div>
                             </div>
 
@@ -695,7 +694,7 @@
                                 <div class="form-group">
                                     <label for="Enquiry">Enquiry</label>
                                     <textarea class="form-control" name="Enquiry" id="Enquiry" placeholder="Enquiry"
-                                              data-validation="length" data-validation-length="min5"></textarea>
+                                              data-validation="length" data-validation-length="min5" required></textarea>
 
                                 </div>
                             </div>
@@ -704,9 +703,9 @@
                         <div class="row text-left">
                             <div class="col-md-10 ">
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-info" name="submit" id="submit" value="">Submit
+                                    <button type="submit" class="btn btn-blue" name="submit" id="submit" value="">Submit
                                     </button>
-                                    <button type="reset" class="btn btn-danger" name="submit" id="reset" value="">Reset
+                                    <button type="reset" class="btn btn-red" name="submit" id="reset" value="">Reset
                                     </button>
 
                                 </div>

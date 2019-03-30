@@ -196,6 +196,10 @@ html {
     height: 100%;
 
 }
+.projectBlock{
+
+    margin-bottom: 15px;
+}
 
 /* end of projects section */
 
@@ -211,7 +215,36 @@ html {
 
 }
 
+.btn-blue{
+    color: #fff;
+    background-color: #51b6f6;
+    border-color: #51b6f6;
+}
+.btn-blue:hover{
+    color: #fff;
+    background-color: #169ef3;
+    border-color: #169ef3;
+}
+.btn-red{
+    color: #fff;
+    background-color: #ff5c5c
 
+;
+    border-color: #ff5c5c
+
+;
+}
+.btn-red:hover{
+    color: #fff;
+    background-color: #ff3333;
+    border-color: #ff3333;
+}
+
+.form-control:focus {
+    border-color: #071932;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 /* end of contact section */
 
 
