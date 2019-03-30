@@ -193,6 +193,7 @@ html {
 
 .projectImg {
     max-height: 260px !important;
+    height: 100%;
 
 }
 
