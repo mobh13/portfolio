@@ -7,58 +7,131 @@
   <title>Mohammed Madan - Portfolio</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70" tabindex="0">
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Mohammed Madan</a>
+    <a class="navbar-brand" href="#Landing">Mohammed Madan</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Technologies">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<header class="py-5 bg-primary text-white">
+
+<section id="Landing">
+  <div class="container">
+    <p class="intro mb-2">Hi, my name is</p>
+    <h1 class="hero-title mb-3">Mohammed Madan.</h1>
+    <h2 class="hero-subtitle mb-4">I build reliable payment platforms.</h2>
+    <p class="mb-5">I'm a Bahraini software engineer focused on crafting secure financial services.</p>
+    <a href="#Projects" class="btn btn-accent btn-lg">Check out my work</a>
+  </div>
+</section>
+
+<section id="About" class="py-5">
+  <div class="container">
+    <h2 class="section-title"><span class="text-accent">01.</span> About Me</h2>
+    <div id="aboutMeParagraph">
+      <p><b>Hello!</b> I'm Mohammed Madan, a Bahraini software engineer focused on crafting seamless payment experiences.</p>
+      <p>Over the past five years I've led teams building secure and scalable services for STC Pay Bahrain, delivering card processing, core banking integrations and realtime payment flows.</p>
+      <p>I enjoy solving complex problems, mentoring engineers and shipping products that improve everyday life.</p>
+    </div>
+  </div>
+</section>
+
+<section id="Technologies" class="py-5">
+  <div class="container">
+    <h2 class="section-title"><span class="text-accent">02.</span> Technologies</h2>
+    <div class="row text-center">
+      <div class="col-6 col-md-3 mb-4">
+        <img src="imgs/nodejs.svg" alt="Node.js" class="technologyImg">
+        <p>Node.js</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <img src="imgs/python.svg" alt="Python" class="technologyImg">
+        <p>Python</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <img src="imgs/icons8-java.svg" alt="Java" class="technologyImg">
+        <p>Java</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <img src="imgs/aws.svg" alt="AWS" class="technologyImg">
+        <p>AWS</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Projects" class="py-5">
+  <div class="container">
+    <h2 class="section-title"><span class="text-accent">03.</span> Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="hovereffect projectBlock">
+          <img src="imgs/projects/cfcBahrain/cfc-mockup-1.png" class="img-fluid projectImg" alt="STC Pay Bahrain">
+          <div class="overlay">
+            <h2>STC Pay Bahrain</h2>
+            <p>Led the backend rebuild for the national mobile wallet, enabling seamless card management and instant payments.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="hovereffect projectBlock">
+          <img src="imgs/projects/cloudNotes/cloudNotes-mockup-1.png" class="img-fluid projectImg" alt="Cloud Notes">
+          <div class="overlay">
+            <h2>Cloud Notes</h2>
+            <p>A cross-platform note taking app with real-time sync built using Flutter and Firebase.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="hovereffect projectBlock">
+          <img src="imgs/projects/team/team-mockup-1.jpg" class="img-fluid projectImg" alt="Team Collaboration">
+          <div class="overlay">
+            <h2>Team Collaboration</h2>
+            <p>Internal platform for agile teams to track tasks and share feedback, built with Laravel and MySQL.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Contact" class="py-5">
   <div class="container text-center">
-    <h1 class="display-4">Senior Software Engineer</h1>
-    <p class="lead">Fintech &amp; Payments specialist with 5+ years of experience.</p>
-    <a href="https://bh.linkedin.com/in/mohammed-madan" class="btn btn-light btn-lg me-2" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
-    <a href="https://medium.com/@mohammedmadan" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener noreferrer"><i class="bi bi-medium"></i> Medium</a>
-  </div>
-</header>
-<section id="about" class="py-5">
-  <div class="container">
-    <h2>About</h2>
-    <p>I'm a senior Software Engineer with over five years of experience in building and scaling fintech products. At STC Pay Bahrain, I played a key role in re-launching the mobile wallet from the ground up—leading backend efforts across cards, core banking, and digital payments. I enjoy working on products that make a real impact.</p>
+    <h2 class="section-title"><span class="text-accent">04.</span> Contact</h2>
+    <p class="contactLead">Let's build something together.</p>
+    <p>Email: <a href="mailto:madannmohamed@gmail.com">madannmohamed@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://bh.linkedin.com/in/mohammed-madan" target="_blank" rel="noopener">/in/mohammed-madan</a></p>
+    <a href="mailto:madannmohamed@gmail.com" class="btn btn-accent btn-lg mt-3">Say Hello</a>
   </div>
 </section>
-<section id="blog" class="py-5 bg-light">
+
+<footer class="py-3">
   <div class="container">
-    <h2>Blog</h2>
-    <p>Read my latest articles on <a href="https://medium.com/@mohammedmadan" target="_blank">Medium</a>.</p>
-  </div>
-</section>
-<section id="contact" class="py-5">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>You can reach me via <a href="mailto:madannmohamed@gmail.com">madannmohamed@gmail.com</a> or connect on <a href="https://bh.linkedin.com/in/mohammed-madan" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-  </div>
-</section>
-<footer class="py-3 bg-dark text-white">
-  <div class="container text-center">
     <p class="mb-0">&copy; <span id="year"></span> Mohammed Madan</p>
   </div>
 </footer>
+
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/smooth-scroll.polyfills.min.js"></script>
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
+  const scroll = new SmoothScroll('a[href*="#"]', { speed: 500 });
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
+
