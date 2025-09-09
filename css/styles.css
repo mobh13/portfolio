@@ -16,6 +16,24 @@ html,body {
 #Landing{
     background-image: url("../imgs/IMG_3339.png");
     background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+#Landing::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+}
+
+#Landing .container{
+    position: relative;
+    z-index: 2;
 }
 #About{ background-color: #e1e1e1;}
 #Technologies{background-color: #e8e8e8;}
